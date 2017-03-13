@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'YUFullscreenGesture'
-  s.version  = '1.0.0'
+  s.version  = '1.0.1'
   s.summary  = 'An pop gesture.'
   s.description  = "YUFullscreenGesture is iPad and iPhone compatible. Supports landscape and portrait orientations and can be used inside UINavigationController."
   s.homepage = 'https://github.com/yuzhidu/YUFullscreenGesture'
