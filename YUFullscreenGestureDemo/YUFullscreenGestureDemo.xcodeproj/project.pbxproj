@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CBF042D1E76D996003FF0B5 /* FirstFirstVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CBF042C1E76D996003FF0B5 /* FirstFirstVC.m */; };
+		0CBF04301E76DA8C003FF0B5 /* SecondFirstVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CBF042F1E76DA8C003FF0B5 /* SecondFirstVC.m */; };
+		0CBF04331E76DA9A003FF0B5 /* ThirdFirstVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CBF04321E76DA9A003FF0B5 /* ThirdFirstVC.m */; };
 		6A990E9B1E7696A0009E3EED /* UINavigationController+YUFullscreenGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A990E9A1E7696A0009E3EED /* UINavigationController+YUFullscreenGesture.m */; };
 		6AC05D301E7637B1007DE7EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC05D2F1E7637B1007DE7EF /* main.m */; };
 		6AC05D331E7637B1007DE7EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC05D321E7637B1007DE7EF /* AppDelegate.m */; };
@@ -14,11 +17,15 @@
 		6AC05D3E1E7637B1007DE7EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AC05D3C1E7637B1007DE7EF /* LaunchScreen.storyboard */; };
 		6AC05D491E76390C007DE7EF /* NavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC05D461E76390C007DE7EF /* NavController.m */; };
 		6AC05D4D1E763985007DE7EF /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC05D4C1E763985007DE7EF /* HomeViewController.m */; };
-		6AC05D501E763A50007DE7EF /* RedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC05D4F1E763A50007DE7EF /* RedViewController.m */; };
-		6AC05D531E763B39007DE7EF /* UIBarButtonItem+YUCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC05D521E763B39007DE7EF /* UIBarButtonItem+YUCustom.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0CBF042B1E76D996003FF0B5 /* FirstFirstVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstFirstVC.h; sourceTree = "<group>"; };
+		0CBF042C1E76D996003FF0B5 /* FirstFirstVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstFirstVC.m; sourceTree = "<group>"; };
+		0CBF042E1E76DA8C003FF0B5 /* SecondFirstVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondFirstVC.h; sourceTree = "<group>"; };
+		0CBF042F1E76DA8C003FF0B5 /* SecondFirstVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondFirstVC.m; sourceTree = "<group>"; };
+		0CBF04311E76DA9A003FF0B5 /* ThirdFirstVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdFirstVC.h; sourceTree = "<group>"; };
+		0CBF04321E76DA9A003FF0B5 /* ThirdFirstVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdFirstVC.m; sourceTree = "<group>"; };
 		6A990E991E7696A0009E3EED /* UINavigationController+YUFullscreenGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+YUFullscreenGesture.h"; sourceTree = "<group>"; };
 		6A990E9A1E7696A0009E3EED /* UINavigationController+YUFullscreenGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+YUFullscreenGesture.m"; sourceTree = "<group>"; };
 		6AC05D2B1E7637B1007DE7EF /* YUFullscreenGestureDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YUFullscreenGestureDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,10 +39,6 @@
 		6AC05D461E76390C007DE7EF /* NavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavController.m; sourceTree = "<group>"; };
 		6AC05D4B1E763985007DE7EF /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		6AC05D4C1E763985007DE7EF /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
-		6AC05D4E1E763A50007DE7EF /* RedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedViewController.h; sourceTree = "<group>"; };
-		6AC05D4F1E763A50007DE7EF /* RedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedViewController.m; sourceTree = "<group>"; };
-		6AC05D511E763B39007DE7EF /* UIBarButtonItem+YUCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+YUCustom.h"; sourceTree = "<group>"; };
-		6AC05D521E763B39007DE7EF /* UIBarButtonItem+YUCustom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+YUCustom.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,10 +88,12 @@
 				6AC05D461E76390C007DE7EF /* NavController.m */,
 				6AC05D4B1E763985007DE7EF /* HomeViewController.h */,
 				6AC05D4C1E763985007DE7EF /* HomeViewController.m */,
-				6AC05D4E1E763A50007DE7EF /* RedViewController.h */,
-				6AC05D4F1E763A50007DE7EF /* RedViewController.m */,
-				6AC05D511E763B39007DE7EF /* UIBarButtonItem+YUCustom.h */,
-				6AC05D521E763B39007DE7EF /* UIBarButtonItem+YUCustom.m */,
+				0CBF042B1E76D996003FF0B5 /* FirstFirstVC.h */,
+				0CBF042C1E76D996003FF0B5 /* FirstFirstVC.m */,
+				0CBF042E1E76DA8C003FF0B5 /* SecondFirstVC.h */,
+				0CBF042F1E76DA8C003FF0B5 /* SecondFirstVC.m */,
+				0CBF04311E76DA9A003FF0B5 /* ThirdFirstVC.h */,
+				0CBF04321E76DA9A003FF0B5 /* ThirdFirstVC.m */,
 				6AC05D2E1E7637B1007DE7EF /* Supporting Files */,
 			);
 			path = YUFullscreenGestureDemo;
@@ -178,11 +183,12 @@
 			files = (
 				6AC05D331E7637B1007DE7EF /* AppDelegate.m in Sources */,
 				6AC05D301E7637B1007DE7EF /* main.m in Sources */,
+				0CBF042D1E76D996003FF0B5 /* FirstFirstVC.m in Sources */,
 				6AC05D491E76390C007DE7EF /* NavController.m in Sources */,
-				6AC05D531E763B39007DE7EF /* UIBarButtonItem+YUCustom.m in Sources */,
 				6AC05D4D1E763985007DE7EF /* HomeViewController.m in Sources */,
-				6AC05D501E763A50007DE7EF /* RedViewController.m in Sources */,
+				0CBF04331E76DA9A003FF0B5 /* ThirdFirstVC.m in Sources */,
 				6A990E9B1E7696A0009E3EED /* UINavigationController+YUFullscreenGesture.m in Sources */,
+				0CBF04301E76DA8C003FF0B5 /* SecondFirstVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
