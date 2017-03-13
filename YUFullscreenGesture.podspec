@@ -10,5 +10,4 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.source   = { :git => 'https://github.com/yuzhidu/YUFullscreenGesture.git', :tag => s.version.to_s }
   s.source_files          = 'YUFullscreenGesture/*.{h,m}'
-  s.resources = 'YUFullscreenGesture/images/*.{png}'
 end
