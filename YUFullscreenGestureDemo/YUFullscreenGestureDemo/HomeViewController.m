@@ -80,6 +80,12 @@
     }
 }
 
-
-
+// 这个地方如果不加此方法，从下一页返回到此页面时电量条会闪一下，
+// 是因为此控制器默认是 UIStatusBarStyleDefault ，
+// 但是我在导航控制器设置了 UIStatusBarStyleLightContent
+// 因此，下一页返回此页面会先变黑后变白，导致闪一下，
+// 只要都设置为 UIStatusBarStyleLightContent 就不会闪
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
+}
 @end

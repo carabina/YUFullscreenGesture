@@ -10,6 +10,7 @@
 		0CBF042D1E76D996003FF0B5 /* FirstFirstVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CBF042C1E76D996003FF0B5 /* FirstFirstVC.m */; };
 		0CBF04301E76DA8C003FF0B5 /* SecondFirstVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CBF042F1E76DA8C003FF0B5 /* SecondFirstVC.m */; };
 		0CBF04331E76DA9A003FF0B5 /* ThirdFirstVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CBF04321E76DA9A003FF0B5 /* ThirdFirstVC.m */; };
+		0CF499C91E76DCDE003014AB /* UIBarButtonItem+YUCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CF499C81E76DCDE003014AB /* UIBarButtonItem+YUCustom.m */; };
 		6A990E9B1E7696A0009E3EED /* UINavigationController+YUFullscreenGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A990E9A1E7696A0009E3EED /* UINavigationController+YUFullscreenGesture.m */; };
 		6AC05D301E7637B1007DE7EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC05D2F1E7637B1007DE7EF /* main.m */; };
 		6AC05D331E7637B1007DE7EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC05D321E7637B1007DE7EF /* AppDelegate.m */; };
@@ -26,6 +27,9 @@
 		0CBF042F1E76DA8C003FF0B5 /* SecondFirstVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondFirstVC.m; sourceTree = "<group>"; };
 		0CBF04311E76DA9A003FF0B5 /* ThirdFirstVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdFirstVC.h; sourceTree = "<group>"; };
 		0CBF04321E76DA9A003FF0B5 /* ThirdFirstVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdFirstVC.m; sourceTree = "<group>"; };
+		0CF499C71E76DCDE003014AB /* UIBarButtonItem+YUCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+YUCustom.h"; sourceTree = "<group>"; };
+		0CF499C81E76DCDE003014AB /* UIBarButtonItem+YUCustom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+YUCustom.m"; sourceTree = "<group>"; };
+		0CF499CA1E76DD0E003014AB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		6A990E991E7696A0009E3EED /* UINavigationController+YUFullscreenGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+YUFullscreenGesture.h"; sourceTree = "<group>"; };
 		6A990E9A1E7696A0009E3EED /* UINavigationController+YUFullscreenGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+YUFullscreenGesture.m"; sourceTree = "<group>"; };
 		6AC05D2B1E7637B1007DE7EF /* YUFullscreenGestureDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YUFullscreenGestureDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +56,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CF499C61E76DCDE003014AB /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				0CF499C71E76DCDE003014AB /* UIBarButtonItem+YUCustom.h */,
+				0CF499C81E76DCDE003014AB /* UIBarButtonItem+YUCustom.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
 		6A990E981E7696A0009E3EED /* YUFullscreenGesture */ = {
 			isa = PBXGroup;
 			children = (
@@ -82,8 +95,6 @@
 			isa = PBXGroup;
 			children = (
 				6A990E981E7696A0009E3EED /* YUFullscreenGesture */,
-				6AC05D311E7637B1007DE7EF /* AppDelegate.h */,
-				6AC05D321E7637B1007DE7EF /* AppDelegate.m */,
 				6AC05D451E76390C007DE7EF /* NavController.h */,
 				6AC05D461E76390C007DE7EF /* NavController.m */,
 				6AC05D4B1E763985007DE7EF /* HomeViewController.h */,
@@ -94,6 +105,7 @@
 				0CBF042F1E76DA8C003FF0B5 /* SecondFirstVC.m */,
 				0CBF04311E76DA9A003FF0B5 /* ThirdFirstVC.h */,
 				0CBF04321E76DA9A003FF0B5 /* ThirdFirstVC.m */,
+				0CF499C61E76DCDE003014AB /* Other */,
 				6AC05D2E1E7637B1007DE7EF /* Supporting Files */,
 			);
 			path = YUFullscreenGestureDemo;
@@ -102,6 +114,9 @@
 		6AC05D2E1E7637B1007DE7EF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0CF499CA1E76DD0E003014AB /* PrefixHeader.pch */,
+				6AC05D311E7637B1007DE7EF /* AppDelegate.h */,
+				6AC05D321E7637B1007DE7EF /* AppDelegate.m */,
 				6AC05D3A1E7637B1007DE7EF /* Assets.xcassets */,
 				6AC05D3C1E7637B1007DE7EF /* LaunchScreen.storyboard */,
 				6AC05D3F1E7637B1007DE7EF /* Info.plist */,
@@ -184,6 +199,7 @@
 				6AC05D331E7637B1007DE7EF /* AppDelegate.m in Sources */,
 				6AC05D301E7637B1007DE7EF /* main.m in Sources */,
 				0CBF042D1E76D996003FF0B5 /* FirstFirstVC.m in Sources */,
+				0CF499C91E76DCDE003014AB /* UIBarButtonItem+YUCustom.m in Sources */,
 				6AC05D491E76390C007DE7EF /* NavController.m in Sources */,
 				6AC05D4D1E763985007DE7EF /* HomeViewController.m in Sources */,
 				0CBF04331E76DA9A003FF0B5 /* ThirdFirstVC.m in Sources */,
@@ -301,6 +317,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DG9N8C5AP3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = YUFullscreenGestureDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = YUFullscreenGestureDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -314,6 +332,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DG9N8C5AP3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = YUFullscreenGestureDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = YUFullscreenGestureDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

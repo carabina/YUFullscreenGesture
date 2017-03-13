@@ -18,7 +18,16 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem yu_barButtonWithImage:@"arrowBack" title:@"返回" target:self action:@selector(leftBarClick)];
 }
 
+- (void)leftBarClick {
+    YULog(@"%s", __FUNCTION__);
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
+}
 @end
