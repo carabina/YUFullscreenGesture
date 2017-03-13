@@ -1,9 +1,9 @@
 //
-//  UINavigationController+YUFullscreenGesture.m
-//  YUFullscreenGestureDemo
 //
-//  Created by 马裕博 on 2017/3/13.
-//  Copyright © 2017年 马裕博. All rights reserved.
+//  关注微博：裕之都
+//  微博地址：http://weibo.com/gou9527
+//
+//  Github：https://github.com/yuzhidu
 //
 
 #import "UINavigationController+YUFullscreenGesture.h"
