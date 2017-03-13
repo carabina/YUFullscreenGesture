@@ -8,4 +8,7 @@
 pod 'YUFullscreenGesture'
 ```
 
+原理：
+使用 Runtime+KVC
+
 
