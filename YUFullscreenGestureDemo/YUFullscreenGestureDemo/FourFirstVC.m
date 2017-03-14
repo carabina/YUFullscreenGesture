@@ -17,14 +17,20 @@
 @property (nonatomic, copy) NSArray<NSString *> *titleArr;
 
 /** scrollView */
-@property (nonatomic, weak) UIScrollView *scrollV;
+@property (nonatomic, strong) UIScrollView *scrollV;
 /** 当前页码（scrollView） */
 @property (nonatomic, assign) int currentTab;
+/** 屏幕旋转前的页码（scrollView） */
+@property (nonatomic, assign) int currentRotateTab;
 
 /** tableView */
 @property (nonatomic, weak) UITableView *tableView1;
 @property (nonatomic, weak) UITableView *tableView2;
 @property (nonatomic, weak) UITableView *tableView3;
+
+/** 是否发生旋转 */
+@property (nonatomic, assign) BOOL isRotate;
+
 @end
 
 @implementation FourFirstVC
@@ -54,8 +60,8 @@
     [tabView setupTabIndex:0];
     [tabView setTitle:self.titleArr then:^(int tag) {
         YULog(@"%@ -->点击%d", self.class, tag);
-        CGFloat y = kScreenWidth * tag;
-        [self.scrollV setContentOffset:CGPointMake(y, 0) animated:YES];
+        CGFloat offsetX = kScreenWidth * tag;
+        [self.scrollV setContentOffset:CGPointMake(offsetX, 0) animated:YES];
     }];
     [self.view addSubview:tabView];
     
@@ -65,6 +71,7 @@
     
     // 添加 scrollView 和 tableView
     ThirdFirstSV *scrollV = [[ThirdFirstSV alloc] init];
+    scrollV.translatesAutoresizingMaskIntoConstraints = NO;
     scrollV.backgroundColor = [UIColor whiteColor];
     scrollV.delegate = self;
     scrollV.pagingEnabled = YES;
@@ -144,12 +151,13 @@
 
 #pragma mark - UIScrollViewDelegate
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    
     YULog(@"偏移%f", scrollView.contentOffset.x);
     if (scrollView.contentOffset.x > 0) {
         double ratio = scrollView.contentOffset.x / kScreenWidth;
         int page = (int)(ratio + 0.5);
         
-        YULog(@"第%d页", page);
+//        YULog(@"第%d页", page);
         self.currentTab = page;
         [self.tabView setupTabIndex:page];
     }
@@ -180,4 +188,28 @@
     return UIStatusBarStyleLightContent;
 }
 
+/**
+ 导致 scrollV 在旋转屏幕时不按分页到对应页面的原因是在屏幕旋转的时候会调用 scrollViewDidScroll 代理方法，导致偏移量不断变化。
+ 
+ 解决方案：
+    在屏幕旋转的时候，从 viewWillTransitionToSize... 方法中可以得知 self.view 和 self.scrollV 的 frame 并没有更新，
+ 因此在这里并不能处理约束。如果要更新 scrollV 的偏移，必须等到布局已经正常，所以我选择了 viewDidLayoutSubviews 方法。
+ */
+#pragma mark - 重力感应方向
+- (void)viewWillTransitionToSize:(CGSize)size
+       withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
+    self.isRotate = YES;
+    self.currentRotateTab = self.currentTab;
+}
+
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    
+    if (self.isRotate) {
+        CGFloat offsetX = self.currentRotateTab * self.scrollV.frame.size.width;
+        [self.scrollV setContentOffset:CGPointMake(offsetX, 0) animated:YES];
+    } else {
+        self.isRotate = NO;
+    }
+}
 @end
