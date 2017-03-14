@@ -11,15 +11,33 @@
 
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
-
+/********************** 1.Log宏 ***************/
 #ifdef DEBUG
-//#define HYLog(...)  printf("%f %s\n",[[NSDate date] timeIntervalSince1970],[[NSString stringWithFormat:__VA_ARGS__] UTF8String])
 #define YULog(...)  NSLog(__VA_ARGS__)
 #else
 #define YULog(...)
 #endif
 
+/********************** 2.颜色 ***************/
+// 设置RGB色值
+#define kColorWithRGB(r, g, b) ([UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1.0f])
+#define kColorWithRGBA(r, g, b, a) ([UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:(a)])
+// 主题色值(天蓝色)kColorWithRGB(0, 192, 255)
+#define kColorTheme ([UIColor colorWithRed:(0)/255.0f green:(192)/255.0f blue:(255)/255.0f alpha:1.0f])
+// 分割线颜色
+#define kColorDriveLine  ([UIColor colorWithRed:(221)/255.0f green:(221)/255.0f blue:(221)/255.0f alpha:1.0f])
+
+/********************** 3.尺寸宏 ***************/
+#define kScreenWidth        ([UIScreen mainScreen].bounds.size.width)
+#define kScreenHeight       ([UIScreen mainScreen].bounds.size.height)
+
 #import "UINavigationController+YUFullscreenGesture.h"
+
 #import "UIBarButtonItem+YUCustom.h"
+#import "UIImage+YUResize.h"
+#import "UIView+YUFrame.h"
+#import "UILabel+YUTextSize.h"
+
+#import "Masonry.h"
 
 #endif /* PrefixHeader_pch */

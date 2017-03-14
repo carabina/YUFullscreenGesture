@@ -10,6 +10,7 @@
 #import "FirstFirstVC.h"
 #import "SecondFirstVC.h"
 #import "ThirdFirstVC.h"
+#import "FourFirstVC.h"
 
 @interface HomeViewController ()
 /** 标题 */
@@ -24,6 +25,7 @@
         [NSMutableArray arrayWithObjects:@"1.Push a VC with bar",
                                          @"2.Push a VC without bar",
                                          @"3.Push a VC with scrollView",
+                                         @"4.Push a VC with scrollView and tableView",
                                          nil];
     }
     return _titleArrM;
@@ -45,11 +47,11 @@
     static NSString *identifer = @"cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifer];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifer];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:identifer];
         cell.backgroundColor = [UIColor whiteColor];
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
-    cell.textLabel.text = self.titleArrM[indexPath.row];
+    cell.detailTextLabel.text = self.titleArrM[indexPath.row];
     return cell;
 }
 
@@ -72,6 +74,12 @@
         {
             ThirdFirstVC *thirdFirst = [[ThirdFirstVC alloc] init];
             [self.navigationController pushViewController:thirdFirst animated:YES];
+        }
+            break;
+        case 3:
+        {
+            FourFirstVC *fourFirst = [[FourFirstVC alloc] init];
+            [self.navigationController pushViewController:fourFirst animated:YES];
         }
             break;
             
