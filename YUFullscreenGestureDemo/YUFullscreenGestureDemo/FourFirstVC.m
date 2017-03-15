@@ -208,7 +208,6 @@
     if (self.isRotate) {
         CGFloat offsetX = self.currentRotateTab * self.scrollV.frame.size.width;
         [self.scrollV setContentOffset:CGPointMake(offsetX, 0) animated:YES];
-    } else {
         self.isRotate = NO;
     }
 }
