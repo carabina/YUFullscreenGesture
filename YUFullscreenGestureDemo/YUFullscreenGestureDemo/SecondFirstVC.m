@@ -20,7 +20,7 @@
     
     self.yu_prefersNavigationBarHidden = YES;
     
-    self.view.backgroundColor = [UIColor purpleColor];
+    self.view.backgroundColor = kColorWithRGB(0, 128, 0);
     
     // 添加 push 按钮
     [self addPushButton];

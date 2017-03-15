@@ -86,19 +86,19 @@
     UITableView *tableView1 = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
     tableView1.delegate = self;
     tableView1.dataSource = self;
-    tableView1.backgroundColor = [UIColor purpleColor];
+    tableView1.backgroundColor = kColorWithRGB(0, 255, 255);
     [contentView addSubview:tableView1];
     
     UITableView *tableView2 = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
     tableView2.delegate = self;
     tableView2.dataSource = self;
-    tableView2.backgroundColor = [UIColor blueColor];
+    tableView2.backgroundColor = kColorWithRGB(152, 251, 152);
     [contentView addSubview:tableView2];
     
     UITableView *tableView3 = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
     tableView3.delegate = self;
     tableView3.dataSource = self;
-    tableView3.backgroundColor = [UIColor yellowColor];
+    tableView3.backgroundColor = kColorWithRGB(255, 222, 173);
     [contentView addSubview:tableView3];
     
     self.tabView = tabView;
